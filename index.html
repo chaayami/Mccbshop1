@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รวมดีลเด็ดและโปรโมชั่นสุดคุ้ม</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f0f0;
+        }
+        .text-neon-pink { color: #ff00ff; }
+        .bg-neon-green { background-color: #39ff14; }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .controls {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .slider-container:hover .controls {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-purple-800 text-white flex flex-col items-center min-h-screen p-4">
+
+    <!-- Header Section -->
+    <header class="text-center mb-12 mt-8">
+        <h1 class="text-5xl md:text-7xl font-bold text-yellow-300 text-shadow mb-2 animate-pulse">รวมดีลเด็ดและโปรโมชั่นสุดคุ้ม</h1>
+        <p class="text-xl md:text-2xl font-light text-cyan-400">สินค้าลดราคาและโปรโมชั่นพิเศษที่คัดสรรมาเพื่อคุณ</p>
+    </header>
+
+    <!-- Content Section -->
+    <main class="w-full max-w-6xl">
+        <!-- Top 3 Affiliate Links -->
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center text-pink-400">ช้อปเลย! แพลตฟอร์มที่คุณชื่นชอบ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- All Online -->
+                <div class="relative w-full aspect-square overflow-hidden rounded-lg shadow-xl bg-gradient-to-r from-red-500 to-red-700 p-2 transform hover:scale-105 transition-transform duration-300 slider-container">
+                    <a href="https://atth.me/000bp8000aj2" target="_blank" class="block w-full h-full">
+                        <div class="slider w-full h-full">
+                            <div class="slide">
+                                <!-- วางลิงก์รูปภาพของ All Online ที่เป็น URL โดยตรง (ต้องลงท้ายด้วย .jpg, .png) -->
+                                <img src="https://i.postimg.cc/KYRrG9WY/product1-png.png" alt="All Online" class="rounded-md object-cover w-full h-full">
+                            </div>
+                            <div class="slide">
+                                <!-- วางลิงก์รูปภาพ All Online อันที่ 2 -->
+                                <img src="https://i.postimg.cc/pTNHkSbh/promo1-png.png" alt="All Online Promo" class="rounded-md object-cover w-full h-full">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Shopee -->
+                <div class="relative w-full aspect-square overflow-hidden rounded-lg shadow-xl bg-gradient-to-r from-orange-400 to-orange-600 p-2 transform hover:scale-105 transition-transform duration-300 slider-container">
+                    <a href="https://atth.me/0041fn000aj2" target="_blank" class="block w-full h-full">
+                        <div class="slider w-full h-full">
+                            <div class="slide">
+                                <!-- วางลิงก์รูปภาพของ Shopee ที่เป็น URL โดยตรง (ต้องลงท้ายด้วย .jpg, .png) -->
+                                <img src="https://i.postimg.cc/MHkhbfBy/product2-png.png" alt="Shopee" class="rounded-md object-cover w-full h-full">
+                            </div>
+                             <div class="slide">
+                                <!-- วางลิงก์รูปภาพ Shopee อันที่ 2 -->
+                                <img src="https://i.postimg.cc/CL4x5wyv/promo2-png.png" alt="Shopee Promo" class="rounded-md object-cover w-full h-full">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Lazada -->
+                <div class="relative w-full aspect-square overflow-hidden rounded-lg shadow-xl bg-gradient-to-r from-blue-500 to-blue-700 p-2 transform hover:scale-105 transition-transform duration-300 slider-container">
+                    <a href="https://atth.me/00bgpi000aj2" target="_blank" class="block w-full h-full">
+                        <div class="slider w-full h-full">
+                            <div class="slide">
+                                <!-- วางลิงก์รูปภาพของ Lazada ที่เป็น URL โดยตรง (ต้องลงท้ายด้วย .jpg, .png) -->
+                                <img src="https://i.postimg.cc/RZ0btLYk/product3-png.png" alt="Lazada" class="rounded-md object-cover w-full h-full">
+                            </div>
+                             <div class="slide">
+                                <!-- วางลิงก์รูปภาพ Lazada อันที่ 2 -->
+                                <img src="https://i.postimg.cc/L6Q3cKyW/promo3-png.png" alt="Lazada Promo" class="rounded-md object-cover w-full h-full">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom 3 Product Promotions -->
+        <section>
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center text-lime-400">ดีลพิเศษสำหรับสินค้าแนะนำ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Product 1 & Promo 1 -->
+                <div class="relative w-full aspect-square overflow-hidden rounded-lg shadow-xl bg-gray-800 p-2 transform hover:scale-105 transition-transform duration-300 slider-container">
+                    <a href="https://atth.me/000bp8000aj2" target="_blank" class="block w-full h-full">
+                        <div class="slider w-full h-full" data-id="product-1">
+                            <div class="slide">
+                                <!-- วางลิงก์รูปภาพ Product 1 ที่เป็น URL โดยตรง (ต้องลงท้ายด้วย .jpg, .png) -->
+                                <img src="https://i.postimg.cc/KYRrG9WY/product1-png.png" alt="Product 1" class="rounded-md object-cover w-full h-full">
+                            </div>
+                            <div class="slide">
+                                <!-- วางลิงก์รูปภาพ Promo 1 ที่เป็น URL โดยตรง (ต้องลงท้ายด้วย .jpg, .png) -->
+                                <img src="https://i.postimg.cc/pTNHkSbh/promo1-png.png" alt="Promo 1" class="rounded-md object-cover w-full h-full">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Product 2 & Promo 2 -->
+                <div class="relative w-full aspect-square overflow-hidden rounded-lg shadow-xl bg-gray-800 p-2 transform hover:scale-105 transition-transform duration-300 slider-container">
+                    <a href="https://atth.me/0041fn000aj2" target="_blank" class="block w-full h-full">
+                        <div class="slider w-full h-full" data-id="product-2">
+                            <div class="slide">
+                                <!-- วางลิงก์รูปภาพ Product 2 ที่เป็น URL โดยตรง (ต้องลงท้ายด้วย .jpg, .png) -->
+                                <img src="https://i.postimg.cc/MHkhbfBy/product2-png.png" alt="Product 2" class="rounded-md object-cover w-full h-full">
+                            </div>
+                            <div class="slide">
+                                <!-- วางลิงก์รูปภาพ Promo 2 ที่เป็น URL โดยตรง (ต้องลงท้ายด้วย .jpg, .png) -->
+                                <img src="https://i.postimg.cc/CL4x5wyv/promo2-png.png" alt="Promo 2" class="rounded-md object-cover w-full h-full">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Product 3 & Promo 3 -->
+                <div class="relative w-full aspect-square overflow-hidden rounded-lg shadow-xl bg-gray-800 p-2 transform hover:scale-105 transition-transform duration-300 slider-container">
+                    <a href="https://atth.me/00bgpi000aj2" target="_blank" class="block w-full h-full">
+                        <div class="slider w-full h-full" data-id="product-3">
+                            <div class="slide">
+                                <!-- วางลิงก์รูปภาพ Product 3 ที่เป็น URL โดยตรง (ต้องลงท้ายด้วย .jpg, .png) -->
+                                <img src="https://i.postimg.cc/RZ0btLYk/product3-png.png" alt="Product 3" class="rounded-md object-cover w-full h-full">
+                            </div>
+                            <div class="slide">
+                                <!-- วางลิงก์รูปภาพ Promo 3 ที่เป็น URL โดยตรง (ต้องลงท้ายด้วย .jpg, .png) -->
+                                <img src="https://i.postimg.cc/L6Q3cKyW/promo3-png.png" alt="Promo 3" class="rounded-md object-cover w-full h-full">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Auto-Sliding -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sliders = document.querySelectorAll('.slider-container');
+            
+            // Loop through each slider and start the animation
+            sliders.forEach(container => {
+                const slider = container.querySelector('.slider');
+                let slideIndex = 0;
+                let interval;
+
+                const startSlide = () => {
+                    interval = setInterval(() => {
+                        slideIndex++;
+                        if (slideIndex >= slider.children.length) {
+                            slideIndex = 0;
+                        }
+                        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+                    }, 3000); // Change slide every 3 seconds
+                };
+
+                const stopSlide = () => {
+                    clearInterval(interval);
+                };
+
+                const createControls = () => {
+                    const controls = document.createElement('div');
+                    controls.className = 'controls';
+                    controls.innerHTML = `
+                        <button class="play-btn bg-gray-900 text-white rounded-full p-3 shadow-md hover:bg-gray-700 transition-colors duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-4.482 2.241A1 1 0 019 12.241V10.24a1 1 0 011.27-.927l4.482 2.241a1 1 0 010 1.514z" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </button>
+                        <button class="pause-btn bg-gray-900 text-white rounded-full p-3 shadow-md hover:bg-gray-700 transition-colors duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m4-4H6a2 2 0 00-2 2v2a2 2 0 002 2h8a2 2 0 002-2v-2a2 2 0 00-2-2z" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </button>
+                    `;
+                    container.appendChild(controls);
+
+                    controls.querySelector('.play-btn').addEventListener('click', () => {
+                        stopSlide();
+                        startSlide();
+                    });
+
+                    controls.querySelector('.pause-btn').addEventListener('click', () => {
+                        stopSlide();
+                    });
+                };
+
+                startSlide();
+                createControls();
+            });
+        });
+    </script>
+</body>
+</html>
